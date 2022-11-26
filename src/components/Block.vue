@@ -1,0 +1,39 @@
+<template lang="">
+    <div class="block" v-if="showBlock">
+        click me
+    </div>
+</template>
+<script>
+export default {
+    props: ['delay'],
+    data(){
+        return {
+            showBlock: false
+        }
+    },
+    mounted(){
+        console.log('component mounted')
+        setTimeout(() => {
+            this.showBlock = true
+            console.log(this.delay)
+        }, this.delay )
+    },
+    updated(){
+        console.log('component updated')
+    },
+    unmounted(){
+        console.log('component unmounted')
+    }
+}
+</script>
+<style>
+    .block{
+        width: 200px;
+        border-radius: 20px;
+        background: green;
+        color: white;
+        text-align: center;
+        padding: 100px;
+        margin: 40px auto;
+    }
+</style>
