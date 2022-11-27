@@ -28,12 +28,12 @@ export default {
 </script>
 <style>
     .block{
-        width: 200px;
+        width: 100px;
         border-radius: 20px;
         background: green;
         color: white;
         text-align: center;
-        padding: 100px;
+        padding: 20px;
         margin: 40px auto;
     }
 </style>
