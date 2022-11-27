@@ -49,7 +49,14 @@ button{
   color: white;
   border: none;
   padding: 8px 16px;
-  border-radius: 4px;
-
+  border-radius: 5px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin: 10 px;
+}
+button[disabled] {
+  opacity: 0.2;
+  cursor: not-allowed;
 }
 </style>
