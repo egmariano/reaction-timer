@@ -12,9 +12,9 @@
       }
     },
     mounted(){
-      if (this.score < 250 ) {
+      if (this.scr < 250 ) {
         this.rank = 'Ninja Fingers'
-      } else if (this.score < 400){
+      } else if (this.scr < 400){
         this.rank = 'Rapid Reflexes' 
       } else {
         this.rank = 'Snail pace...'
